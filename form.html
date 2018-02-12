@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<title>Forms</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+  <style>
+    body { /*background-color: #e1e5e8;*/
+        /*sbackground-color: rgb(247, 244, 244);*/
+        background-color: white;
+		  }
+		  
+    p      {  font-weight: bolder;
+          }
+          
+    fieldset {
+        border: double;
+        background-color: #e1e5e8;
+    }
+
+    input {
+        box-shadow: inset 0 0 2px #777777;
+    }
+
+    #submit {
+        font-weight: bold;
+        border-radius: 10px;
+    }
+		  
+  </style>
+</head>
+<body>
+  <h3>THE CODE REVIEW<h3>
+  <h5>Signup for our newsletter</h5>
+  <h6>Get the latest news on how your code is doing right in your inbox</h6>
+<form action="/register" method="get">
+<fieldset>
+  <legend>Contact Information</legend>
+	    <p>Full Name:</p>
+		  <label for="name"><input type="text" name="name" maxlength="15" id="name" placeholder="required"></label>
+		<p>Email Address:</p>
+          <label for="email"><input type="email" name="email" maxlength="30" id="email" placeholder="required"></label>
+          <p>Phone Number:</p>
+          <label for="telephone"><input type="tel" name="telephone" id="telephone" maxlength="11" placeholder="required"></label>
+          <p>Street Address:</p>
+		  <label for="address"><input type="address" name="address" id="address" maxlength="20"></label>
+		<p>City:</p>
+          <label for="city"><input type="city" name="city" id="city" maxlength="15"></label>
+          <p>State:</p>
+          <label for="state"><select id="state" name="state">
+                <option value="Georgia">Georgia</option>
+                <option value="Florida">Florida</option>
+                <option value="North Carolina">North Carolina</option>
+          </select></label>
+          <p>Zip Code:</p>
+		  <label for="zip"><input type="zip" name="zip" id="zip" maxlength="12"></label>
+</fieldset>
+<pre></pre>
+<fieldset>
+  <legend>Newsletter:</legend>
+    <p>Select the newsletter you would like to receive</p>
+	    <label for="html"><input type="checkbox" value="html news" name="News" id="html">HTML News</input></label>
+		<label for="css"><input type="checkbox" value="css news" name="News" id="css">CSS News</input></label>
+		<label for="javascript"><input type="checkbox" value="javascript news" name="News" id="javascript">Javascript News</input></label>
+  <p>Newsletter format</p>
+    <label for="HTML"><input type="radio" name="Rating" value="Yes" checked="checked" id="HTML">HTML</input></label>
+	<label for="text"><input type="radio" name="Rating" value="No" id="text">Plain text</input></label>
+	</br>
+	</br>
+  <legend>Other topics you'd like to hear about:</legend>
+    <label for="comments"><textarea cols="40" rows="8" name="comments" id="comments">
+    </textarea>
+    </label>
+	  </br>
+<!--<label>
+ </br>
+  <input type="checkbox" name="sign_up">Sign me up for email updates
+</label>
+  </br>-->
+  </br>
+    <label for="submit"><input id="submit" type="submit" name="submit" value="Sign Up"></label>
+</form>
+</fieldset>
+</body>
+<footer>Copyright The Code Review</footer>
+</html>
+
+
+
