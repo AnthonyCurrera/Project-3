@@ -1,0 +1,258 @@
+  /***************************
+    Global Layout Set-up 
+  ****************************/
+  
+  * {
+   box-sizing: border-box;
+  }
+
+  body {
+   margin: 0 auto;
+   font-size: 1em;
+   color: black;
+   font-family: 'Merriweather Sans', sans-serif;
+   background-color: #74AFAD;
+  }
+
+  /**************************
+        Header style
+  **************************/
+  
+  header {
+    text-align: center;
+  }
+
+  header h1 {
+    font-family: 'Hadar-font', sans-serif;
+    background-color: #558C89;
+    color: white;
+    font-size: 1.7em;
+    margin-top: 0;
+    padding: 38px 0 38px;
+    text-transform: uppercase;
+  }
+
+  header h2 {
+   font-family: 'Hadar-font', sans-serif;
+   font-size: 1.6em;
+   margin-top: 40px;
+   color: #496361;
+  }
+
+  header p {
+    width: 90%;
+    margin: 20px auto 20px;
+    line-height: 150%;
+  }
+
+  header hr {
+    border-left: none;
+    border-right: none;
+    height: 5px;
+    width: 85%;
+    border-top: solid 5px #558C89;
+    border-bottom: solid 2px #558C89;
+  }
+
+  /**************************
+        Form style
+  **************************/
+
+  fieldset {
+    padding: 0;
+    margin: 0;
+    border: none;
+  }
+
+  form {
+    margin: auto;
+    width: 90%;
+    background-color: #ECECEA;
+    padding: 5%;
+  }
+
+  input,
+  select,
+  textarea {
+    display: block;
+    height: 50px;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: none;
+    border-radius: 0%;
+    margin: 15px 0 15px;
+  }
+
+  input:hover,
+  select:hover,
+  textarea:hover {
+    border: solid 2px #558C89;;
+    transition: all .3s;
+  }
+
+  textarea {
+    height: 95px;
+  }
+
+  button {
+    padding: 19px 39px 18px 39px;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    width: 100%;
+    border-width: 1px 1px 3px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    border: solid 1px #da7c0c;
+    background-color: #f78d1d;
+    background: -webkit-gradient(linear, left top, left bottom, from(#faa51a), to(#f47a20));
+    color: #fef4e9;
+  }
+  button:hover {
+    transform: scale(1.01);
+  }
+
+  [required]::placeholder {
+    text-align: right;
+    padding-right: 5px;
+  }
+
+  .nsf {
+    margin-top: 35px;
+  }
+
+  #zip-code {
+    width: 33%;
+  }
+
+  .textarea {
+    margin: 32px 0 22px;
+  }
+
+  .contact,
+  .newsletter {
+    display: block;
+    font-size: 1.3em;
+    padding: 28px 0 28px;
+    text-align: left;
+    font-weight: bold;
+    color: #496361;
+  }
+
+  .hr-b {
+    margin-top: 25px;
+    border: solid 1px #558C89;;
+  }
+
+  .radio-checkbox {
+    display: inline;
+    width: inherit;
+    height: inherit;
+    margin: 8px;
+  }
+
+  input[type="radio"],
+  input[type="checkbox"] {
+    background: none;
+  }
+
+  input:focus,
+  textarea:focus,
+  select:focus {
+    background-color: white;
+  }
+
+  /**************************
+      Footer style
+  **************************/
+
+  footer p {
+    text-align: center;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: lightgrey;
+  }
+
+  /*********************************************
+     Styles for larger screens - Media Query
+  *********************************************/
+  
+  @media (min-width: 768px) {
+    
+  body {
+    background: black;
+    background-color: #74AFAD;
+  }
+
+  header hr {
+    width: 65%;
+  }
+
+  form {
+    width: 65%;
+    margin: auto;
+    background-color: #ECECEA;
+    border-radius: 5px;
+    padding-bottom: 40px;
+    box-shadow: 5px 5px 13px rgba(0, 0, 0, .05);
+  }
+
+  input,
+  select,
+  textarea {
+    margin: auto;
+    cursor: pointer;
+  }
+
+  input,
+  select,
+  .label {
+    display: inline-block;
+    margin-bottom: 15px;
+  }
+
+  input,
+  select {
+    width: 69%;
+    border-radius: 5px;
+  }
+
+  #zip-code {
+    width: 20%;
+  }
+  
+  .label {
+    width: 30%;
+  }
+
+  fieldset {
+    width: 90%;
+    margin: auto;
+  }
+
+  .radio-checkbox {
+    display: inline;
+    width: 5%;
+  }
+
+  textarea {
+    margin-top: 3%;
+    border-radius: 10px;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+}
+
+/********************* 
+   Float clearfix 
+*********************/
+  
+  .clearfix::after {
+    content: " ";
+    display: table;
+    clear: both;
+}
